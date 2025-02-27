@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopStack - Modern E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopStack</div>
+            <div class="nav-items">
+                <a href="#" class="active">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+            </div>
+            <div class="cart-icon" id="cartIcon">
+                <span class="cart-count">0</span>
+                🛒
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to ShopStack</h1>
+                <p>Discover our curated collection of premium products</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f" alt="Clothing">
+                    <h3>Clothing</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Books">
+                    <h3>Books</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556911220-bac6d80f0468" alt="Home & Kitchen">
+                    <h3>Home & Kitchen</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h2>Your Cart</h2>
+                    <button class="close-cart" id="closeCart">&times;</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cartTotal">$0.00</span>
+                    </div>
+                    <button class="checkout-button" id="checkoutButton">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopStack</h3>
+                <p>Your one-stop shop for quality products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@shopstack.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopStack. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
